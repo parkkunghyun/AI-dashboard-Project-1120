@@ -82,7 +82,7 @@ const TranslatePage = () => {
 
         <div className='border relative flex flex-col justify-center shadow-lg rounded-lg h-[300px] w-[300px] '>
           <p className='absolute w-full border border-gray-200 top-10'></p>
-          <p className='p-2'>{translateText}</p>
+          <p className='p-4'>{translateText ? translateText : <span className='text-gray-400'>번역결과가 나옵니다.</span>}</p>
         </div>
       </div>
     </div>
