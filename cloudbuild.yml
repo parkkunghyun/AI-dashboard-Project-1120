@@ -1,0 +1,6 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '--platform', 'linux/amd64', '-t', 'us-central1-docker.pkg.dev/as-rudgus4620/ai-dashboard-1120/dashboard', '.']
+
+images:
+  - 'us-central1-docker.pkg.dev/as-rudgus4620/ai-dashboard-1120/dashboard'
